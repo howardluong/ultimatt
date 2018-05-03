@@ -6,7 +6,17 @@
 <link href="um-stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onload="loadPage()" id="mainContent">
+
+<div class="preload" id="preload">
+	<div id="preloadMessage"></div>
+
+	<div class="loader-frame">
+		<div class="loader1" id="loader1">
+			<img src="loadingLogo.png">
+		</div>
+	</div>
+</div>
 <!--Top Nav-->
 <div class="row">
   <div class="topnav-container col-12">

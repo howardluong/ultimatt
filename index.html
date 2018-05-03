@@ -10,7 +10,17 @@
 <!--End of Slippry Slider Link-->
 </head>
 
-<body>
+<body onload="loadPage()" id="mainContent">
+
+<div class="preload" id="preload">
+	<div id="preloadMessage"></div>
+
+	<div class="loader-frame">
+		<div class="loader1" id="loader1">
+			<img src="loadingLogo.png">
+		</div>
+	</div>
+</div>
 
 <!--Top Nav-->
 <div class="row">
@@ -29,7 +39,7 @@
 
 <div class="row">
 	<div class="index-header col-12">
-		<div class="header-text-box"><span>Mattresses for everyone.</span><br><br> We specialize in foam mattresses but we can definitely make a great spring mattress as well.
+		<div class="header-text-box animation-element slide-left"><span>Mattresses for everyone.</span><br><br> We specialize in foam mattresses but we can definitely make a great spring mattress as well.
         </div>
 	</div>
 </div>
@@ -41,7 +51,7 @@
 </div>
 
 
-<div class="row">
+<div class="row animation-element slide-up2" id="indexSlider">
  <div class="slide-container">
   <ul id="slippry-demo">
     <li>

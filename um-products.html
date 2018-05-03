@@ -6,7 +6,17 @@
 <link href="um-stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onload="loadPage()" id="mainContent">
+
+<div class="preload" id="preload">
+	<div id="preloadMessage"></div>
+
+	<div class="loader-frame">
+		<div class="loader1" id="loader1">
+			<img src="loadingLogo.png">
+		</div>
+	</div>
+</div>
 <!--Top Nav-->
 <div class="row">
   <div class="topnav-container col-12">
@@ -28,12 +38,12 @@
 
 <div class="row">
 	<div class="pnd-container full-container col-8">
-		<div class="personal-container">
+		<div class="personal-container animation-element slide-left">
 		    <img id="personal" src="img/personal-feel-white.png">
 		    <p class="personal-design-text white-text">Personalized Design and Feel</p>
 		    <p class="text-box white-text center-text">Choose from our wide selection of mattresses and choose the type of foam and fabric you want to sleep on</p>
 		</div>
-		<div class="delivery-container">
+		<div class="delivery-container animation-element slide-right">
 			<img id="delivery" src="img/fast-delivery-white.png">
 			<p class="fast-delivery-text white-text">Fast Delivery</p>
 		    <p class="text-box white-text center-text">Receive your product within a few days from the order date</p>
@@ -59,7 +69,7 @@
 	</div>
 	
 	<div class="product-card col-7">
-		<img id="foam" src="img/pillowtop-bedframe-sidecut.png">
+		<img id="foam" src="img/pillowtop-bedframe-sidecut.jpg">
 		<img id="spring" src="img/room-cut.gif">
 		<img id="platform" src="img/bedframe-cutout.gif">
 	</div>
@@ -69,10 +79,10 @@
 <div class="row">
 	<div class="feature col-12">
 		<h1 class="black-heading center-text">Features</h1>
-		<div class="features-mattress col-6">
+		<div class="features-mattress col-6 animation-element slide-left">
 			<img src="img/ultimatt-1.gif">
 		</div>
-		<div class="features-desc col-6">
+		<div class="features-desc col-6 animation-element slide-right">
 			<h2 class="black-heading">Mattresses for all</h2>
 			<p>Choose the type of mattress that suits you.</p>
 			<h3 class="black-heading">Customize your own mattress</h3>
@@ -87,7 +97,7 @@
 		<div class="pricing-container col-6">
 			<div class="prices center-text">
 				<p>Starting at</p>
-				<p class="font-big">$80 CAD</p>
+				<p class="font-big animation-element slide-up">$80 CAD</p>
 				<p>From single sizes</p>
 			</div>
 		</div>
